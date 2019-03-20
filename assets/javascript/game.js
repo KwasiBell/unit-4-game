@@ -10,11 +10,12 @@
 
     $(".crystals").empty();
 
+
     var images = [
-        '<img id="black crystal.jpg" src="assets/images/black crystal.jpg">',
-        '<img id="green crystal.jpg" src="assets/images/green crystal.jpg">',
-        '<img id="red crystal.jpg" src="assets/images/red crystal.jpg">',
-        '<img id="blue crystal.jpg" src="assets/images/blue crystal.jpg">'];
+     "./assets/images/black-crystal.jpg",
+      "./assets/images/green-crystal.jpg",
+      "./assets/images/red-crystal.jpg",
+      "./assets/images/blue-crystal.png"];
 
     random_result = Math.floor(Math.random() * 69 ) + 30 ;
 
@@ -33,8 +34,8 @@
 
     });
     crystal.css({
-        "background-image":"url('" + images[i] + "')",
-        "background":"red"
+        "background-image":"url("+images[i]+")"
+
       });
 
 
